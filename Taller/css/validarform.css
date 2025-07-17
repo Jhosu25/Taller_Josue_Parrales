@@ -1,0 +1,18 @@
+.error{
+    color: red;
+    font-size: 14px;
+}
+
+.valido{
+    border: 2px solid rgb(17, 243, 92);
+}
+
+.noValido{
+    border: 2px solid rgb(233, 64, 64);
+}
+
+#envioExitoso{
+    color: rgb(5, 82, 30);
+    font-weight: bold;
+    margin-top: 20px;
+}

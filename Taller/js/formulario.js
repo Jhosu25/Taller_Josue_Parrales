@@ -7,7 +7,7 @@ const mostrarMensaje = () => {
     const correo = document.querySelector("#correo").value;
     const direccion = document.querySelector("#direccion").value;
     const telefono = document.querySelector("#telefono").value;
-    const interes = document.querySelector("#interes").value;
+    const juego = document.querySelector("#juego").value;
     const costo = document.querySelector("#costo").value;
 
     cajaImprimir.innerHTML = `
@@ -19,7 +19,7 @@ const mostrarMensaje = () => {
                     <th class="py-2 px-4 border">Correo</th>
                     <th class="py-2 px-4 border">Dirección</th>
                     <th class="py-2 px-4 border">Teléfono</th>
-                    <th class="py-2 px-4 border">Interés</th>
+                    <th class="py-2 px-4 border">Juego</th>
                     <th class="py-2 px-4 border">Costo</th>
                 </tr>
             </thead>
@@ -30,7 +30,7 @@ const mostrarMensaje = () => {
                     <td class="py-2 px-4 border">${correo}</td>
                     <td class="py-2 px-4 border">${direccion}</td>
                     <td class="py-2 px-4 border">${telefono}</td>
-                    <td class="py-2 px-4 border">${interes}</td>
+                    <td class="py-2 px-4 border">${juego}</td>
                     <td class="py-2 px-4 border">$${costo}</td>
                 </tr>
             </tbody>
@@ -40,7 +40,7 @@ const mostrarMensaje = () => {
 
 const registrar=()=>{
     mostrarMensaje();
-    alert("Usuario Registrado Con Exito!");
+    //alert("Usuario Registrado Con Exito!");
 }
 
 btnImprimir.onclick = registrar;
