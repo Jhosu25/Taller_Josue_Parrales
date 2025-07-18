@@ -43,7 +43,7 @@ const agregarProducto = async (nombre, precio, imagen) => {
 // Función para cargar carrito
 const cargarCarrito = async () => {
     const carritoTable = document.querySelector("#carritoCompras");
-    if (!carritoTable) return; // Por si no estás en carrito.html
+    if (!carritoTable) return;
 
     carritoTable.innerHTML = "";
     let total = 0;
@@ -105,6 +105,6 @@ const btnPagar = document.getElementById("btnPagar");
 if (btnPagar) {
     btnPagar.addEventListener("click", () => {
         alert("¡Regístrate primero!");
-        window.location.href = "../pages/nosotros.html"; // ajusta si tu ruta es diferente
+        window.location.href = "../pages/nosotros.html"; 
     });
 }
