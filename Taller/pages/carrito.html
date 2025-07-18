@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.4.6/dist/flowbite.min.css" rel="stylesheet">
+    <title>Carrito</title>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Encabezado -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Catalogo Juegos</a>
+            <a href="../pages/productos.html" class="text-white">Volver al Catálogo</a>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">Tu Carrito de Compras</h2>
+
+        <!-- Tabla de Carrito -->
+        <div class="overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Producto
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Precio
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Cantidad
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Eliminar
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="carritoCompras"></tbody>
+            </table>
+        </div>
+
+        <!-- Resumen de la compra -->
+        <div class="flex justify-between items-center mt-6">
+            <div>
+                <a href="../pages/productos.html" class="text-blue-700 hover:text-blue-800">Seguir comprando</a>
+            </div>
+            <div>
+                <span id="totalCompra" class="text-xl font-semibold">Total: $0.00</span>
+            </div>
+            <div>
+                <button id="btnPagar" class="px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flowbite Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.4.6/dist/flowbite.min.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="/Taller/js/carrito.js"></script>
+
+</body>
+
+
+</html>

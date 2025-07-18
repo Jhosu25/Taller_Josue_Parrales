@@ -21,6 +21,16 @@
                 <li><a href="index.html" class="hover:underline">Inicio</a></li>
                 <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
                 <li><a href="productos.html" class="hover:underline">Productos</a></li>
+                <li>
+                    <a href="carrito.html" class="hover:underline flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7M7 13l-1.5 6h13L17 13M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+                        </svg>
+                        Carrito
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -39,58 +49,59 @@
             <form id="formulario" class="space-y-4">
                 <div>
                     <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" 
+                    <input type="text" id="nombre" name="nombre"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorNombre" class="error"></p>
+                    <p id="errorNombre" class="error"></p>
                 </div>
 
                 <div>
                     <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" 
+                    <input type="text" id="apellido" name="apellido"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorApellido" class="error"></p>
+                    <p id="errorApellido" class="error"></p>
                 </div>
 
                 <div>
                     <label for="correo" class="block text-sm font-medium text-gray-700">Correo Electronico</label>
-                    <input type="email" id="correo" name="correo" 
+                    <input type="email" id="correo" name="correo"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorCorreo" class="error"></p>
+                    <p id="errorCorreo" class="error"></p>
                 </div>
 
                 <div>
                     <label for="direccion" class="block text-sm font-medium text-gray-700">Dirección</label>
                     <input type="text" id="direccion" name="direccion"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorDireccion" class="error"></p>
+                    <p id="errorDireccion" class="error"></p>
                 </div>
 
                 <div>
                     <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
                     <input type="tel" id="telefono" name="telefono"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorTelefono" class="error"></p>
+                    <p id="errorTelefono" class="error"></p>
                 </div>
 
                 <div>
                     <label for="juego" class="block text-sm font-medium text-gray-700">¿Juego que buscas?</label>
                     <input type="text" id="juego" name="juego"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorJuego" class="error"></p>
+                    <p id="errorJuego" class="error"></p>
                 </div>
 
                 <div>
                     <label for="costo" class="block text-sm font-medium text-gray-700">¿Cuanto pagarias $ ?</label>
                     <input type="number" id="costo" name="costo" min="0"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        <p id="errorCosto" class="error"></p>
+                    <p id="errorCosto" class="error"></p>
                 </div>
 
                 <div>
-                    <label for="mensaje" class="block text-sm font-medium text-gray-700">¿Algo en particular? ¿DLC - REMAKES? ¡Describelo =D!</label>
+                    <label for="mensaje" class="block text-sm font-medium text-gray-700">¿Algo en particular? ¿DLC -
+                        REMAKES? ¡Describelo =D!</label>
                     <textarea id="mensaje" name="mensaje"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-                        <p id="errorMensaje" class="error"></p>
+                    <p id="errorMensaje" class="error"></p>
                 </div>
 
                 <button type="submit" id="botonImprimir" disabled
@@ -101,9 +112,9 @@
             <p id="envioExitoso"></p>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-10 px-4 sm:px-6 lg:px-8">
             <h3 class="text-2xl font-bold text-center mb-4">Datos del Cliente</h3>
-            <div id="imprimirMensaje" class="overflow-x-auto">
+            <div id="imprimirMensaje" class="overflow-x-auto w-full">
 
             </div>
         </div>

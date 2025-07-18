@@ -25,7 +25,7 @@ const validarNombre=()=>{
     if(inputNombre.value.trim()==""){
         errorNombre.textContent="El nombre es obligatorio";
         inputNombre.classList.add('noValido');
-        inputNombre.classList.remove('noValido');
+        inputNombre.classList.remove('valido');
         return false;
     }else{
         errorNombre.textContent="";
@@ -40,7 +40,7 @@ const validarApellido=()=>{
     if(inputApellido.value.trim()==""){
         errorApellido.textContent="El apellido es obligatorio";
         inputApellido.classList.add('noValido');
-        inputApellido.classList.remove('noValido');
+        inputApellido.classList.remove('valido');
         return false;
     }else{
         errorApellido.textContent="";
@@ -71,7 +71,7 @@ const validarDireccion=()=>{
     if(inputDireccion.value.trim()==""){
         errorDireccion.textContent="La dirección es obligatoria";
         inputDireccion.classList.add('noValido');
-        inputDireccion.classList.remove('noValido');
+        inputDireccion.classList.remove('valido');
         return false;
     }else{
         errorDireccion.textContent="";
@@ -84,9 +84,9 @@ const validarDireccion=()=>{
 //Validacion Telefono
 const validarTelefono=()=>{
     if(inputTelefono.value.trim()==""){
-        errorTelefono.textContent="Dinos tu juego porfavor";
+        errorTelefono.textContent="El teléfono es obligatorio";
         inputTelefono.classList.add('noValido');
-        inputTelefono.classList.remove('noValido');
+        inputTelefono.classList.remove('valido');
         return false;
     }else{
         errorTelefono.textContent="";
@@ -99,9 +99,9 @@ const validarTelefono=()=>{
 //Validacion Juego
 const validarJuego=()=>{
     if(inputJuego.value.trim()==""){
-        errorJuego.textContent="Dinos tu juego porfavor";
+        errorJuego.textContent="Comentanos tu juego porfavor";
         inputJuego.classList.add('noValido');
-        inputJuego.classList.remove('noValido');
+        inputJuego.classList.remove('valido');
         return false;
     }else{
         errorJuego.textContent="";
@@ -114,9 +114,9 @@ const validarJuego=()=>{
 //Validacion Costo
 const validarCosto=()=>{
     if(inputCosto.value.trim()==""){
-        errorCosto.textContent="El nombre es obligatorio";
+        errorCosto.textContent="El costo es obligatorio";
         inputCosto.classList.add('noValido');
-        inputCosto.classList.remove('noValido');
+        inputCosto.classList.remove('valido');
         return false;
     }else{
         errorCosto.textContent="";

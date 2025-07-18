@@ -11,7 +11,8 @@ const mostrarMensaje = () => {
     const costo = document.querySelector("#costo").value;
 
     cajaImprimir.innerHTML = `
-        <table class="min-w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
+        <div class="overflow-x-auto w-full">
+        <table class="min-w-full bg-white border border-gray-300 rounded-lg text-sm text-left text-gray-700">
             <thead class="bg-gray-800 text-white">
                 <tr>
                     <th class="py-2 px-4 border">Nombre</th>
@@ -35,10 +36,11 @@ const mostrarMensaje = () => {
                 </tr>
             </tbody>
         </table>
+    </div>
     `;
 };
 
-const registrar=()=>{
+const registrar = () => {
     mostrarMensaje();
     //alert("Usuario Registrado Con Exito!");
 }
